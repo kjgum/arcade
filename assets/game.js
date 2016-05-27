@@ -27,16 +27,13 @@ $(document).ready(function() {
     counter = $('#yourNumber');
 
      $('#red').click(function() {
-        num = Math.floor(Math.random() * max);
-        
-        $('yourNumber').html(counter + num);
-        // counter = counter + num;
+        num = +counter.text();
+        counter.text(num+ Math.ceil(Math.random() * max));
       });
 
      $('#green').click(function() {
         num = +counter.text();
         counter.text(num+ Math.ceil(Math.random() * max));
-        counter = counter + num;
       });
 
       $('#blue').click(function() {
@@ -48,6 +45,26 @@ $(document).ready(function() {
         num = +counter.text();
         counter.text(num+ Math.ceil(Math.random() * max));
       });
+
+
+
+if ($(numberToGuess) == $(counter)) {
+        console.log('hey');
+} else {
+    return false; 
+}
+
+
+    // for (var i=0; i< 5; i++){
+    //   var buttonImage = $('<img>');
+      
+    //   imageCrystal.attr('data-num', numbers[i]);
+    //   imageCrystal.attr('src', 'img/red.png');
+    //   imageCrystal.addClass('buttons');
+    //   $('.button').append(imageCrystal);
+    // }
+
+
 
 
      if (counter == numberToGuess){
