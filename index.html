@@ -1,49 +1,42 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>game</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
-  
-  <link rel="stylesheet" href="assets/style.css">
- 
-
-
-
-
-
+    <meta charset="UTF-8">
+    <title>game</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="assets/script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-<script src="assets/game.js"></script> 
-<div class="row">
-    <div class="col-md-3 col-md-offset-2 screen img-rounded">
-      <p>Goal: <span id="number"></span></p>
-
-      <p>Your Score: <span id="yourNumber">0</span></p>
-
-      <p>Wins: <span id="wins"></span></p>
-      <p>Losses: <span id="losses"></span></p>
-
+    <div class="row">
+        <div class="col-md-3 col-md-offset-2 screen img-rounded">
+            <table>
+                <tr>
+                    <td>
+                        <br>Goal:</td>
+                    <td>
+                        <br><span id="random-area"></span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>Score:</td>
+                    <td>
+                        <br><span id="score-area"></span></td>
+                </tr>
+            </table>
+            <br>
+            <!-- <span id="score-title"></span> -->
+            <div id="winArea"></div>
+        </div>
+        <div class="col-md-6 button">
+            <div id="crystal-area"></div>
+        </div>
     </div>
-
-
-  
-
-  <div class="col-md-6 button">
-    <span id="button1" class="buttons"><img src="img/red.png" height="100px;"></span>
-    <span id="button2" class="buttons"><img src="img/green.png" height="100px;"></span>
-    <span id="button3" class="buttons"><img src="img/blue.png" height="100px;"></span>
-    <span id="button4" class="buttons"><img src="img/yellow.png" height="100px;"></span>
-  </div>
-
-</div><!--row-->
-
-
-<footer>Kristin Gumbert | 2016</footer>
-
-
-
-
+    <footer>Kristin Gumbert | 2016</footer>
 </body>
+
 </html>

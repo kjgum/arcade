@@ -1,34 +1,38 @@
 body {
    font-family: 'Press Start 2P', cursive;
    background-color: black;
-   background-image: url('../img/arcade_big.jpg');
+   background-image: url('img/arcade_big.jpg');
    background-repeat: none;
    background-attachment: fixed;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
-  	background-size: cover;
-  	overflow-x:hidden;
+    background-size: cover;
+    overflow-x:hidden;
 }
 
 .button {
-	padding: 10px;
-	filter: sepia(70%);
-	padding: 40px;
-	margin-top: 50px;
+  padding: 10px;
+  filter: sepia(70%);
+  padding: 40px;
+  margin-top: 50px;
 }
 
 .screen {
-	color: white;
-	margin-top: 50px;
-	padding: 40px;
-	background-image: url('');
+  color: white;
+  margin-top: 50px;
+  padding: 40px;
+  background-image: url('');
 }
 
 footer {
-	position: absolute;
-	bottom: 5px;
-	right: 5px;
-	color: white;
-	font-size: 10px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  color: white;
+  font-size: 10px;
+}
+
+img {
+  height: 100px;
 }
